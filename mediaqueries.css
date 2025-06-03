@@ -1,0 +1,169 @@
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  nav {
+    display: none;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+    height: 17vh;
+  }
+
+  .menu-links {
+    position: fixed;
+    top: 60px; /* height of hamburger nav */
+    right: 0;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    z-index: 1000;
+  }
+
+  .menu-links.open {
+    max-height: 500px;
+    padding: 1rem 0;
+    overflow-y: auto;
+    display: flex;
+  }
+
+  /* Section & Layout */
+  section {
+    margin: 0 1rem;
+    height: auto;
+    padding-top: 8vh;
+  }
+
+  .section-container,
+  .about-containers,
+  .experience-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-container,
+  .text-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  /* Profile Section */
+  #profile {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .section__pic-container {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto 20px;
+    max-width: 300px;
+  }
+
+  .section__text {
+    text-align: center;
+  }
+
+  .section__intro,
+  .title,
+  .section__text__p2 {
+    text-align: center;
+  }
+
+  .section__text .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 0.8rem;
+    width: 100%;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  /* About & Experience Section */
+  .about-heading .title,
+  #experience .title {
+    font-size: 2rem;
+  }
+
+  /* Socials */
+  .socials-container {
+    justify-content: center;
+  }
+
+  /* About Pic */
+  .about-pic {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+}
+
+/*    hamburger Test    */
+
+.menu-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: 200px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  text-align: right;
+  border-radius: 0 0 8px 8px;
+}
+
+.menu-links.open {
+  display: flex;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
