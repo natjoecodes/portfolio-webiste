@@ -2,6 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +13,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #f4f1ee, #e6dace);
+  margin: 0;
+  padding-top: 8vh;
 }
 
 html {
@@ -35,18 +41,34 @@ nav,
 }
 
 nav {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh; /* reduced from 17vh */
-  padding: 0 2rem; /* horizontal padding for spacing */
-  background-color: #EFE3D0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
+  height: 10vh;
+  padding: 0 2rem;
+  background: rgba(255, 255, 255, 0.2); /* Brighter base */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #241D1D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 0 0 1rem 1rem; /* Slight roundness at bottom */
 }
-
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.2rem;
+}
+
+.nav-links i {
+  margin-right: 8px;
+  color: #241D1D;
+  font-size: px;
 }
 
 a {
@@ -63,21 +85,26 @@ a:hover {
 }
 
 .logo {
-  font-size: 1.8rem; /* slightly smaller */
+  font-size: 1.8rem; 
   color: #241D1D;
 }
 
 .logo:hover {
-  cursor: default;
+  cursor:pointer;
 }
 
 /* HAMBURGER MENU */
 
 #hamburger-nav {
-  position: relative;
+  position: fixed;
   display: none;
   width: 100%;
   box-sizing: border-box; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .hamburger-menu {
@@ -173,7 +200,7 @@ section {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('./assets/landing-page.png'); 
+  background-image: url('./assets/landing.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -184,32 +211,35 @@ section {
 }
 
 .profile-content {
-  margin: 13%;
+  margin: 10%;
+  margin-top: 12%;
   max-width: 800px;
   color: white;
   z-index: 2;
+  align-items: center;
 }
 
-.section__intro {
+.section_intro {
   font-size: 1.5rem;
   color: #E6D3B3;
-  align-items: center;
-  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.1rem;
 }
 
 .section__text__p2 {
-  margin-top: 1rem;
+  margin-top: 0.1rem;
   font-size: 1.5rem;
+  text-align: center;
   color: #F4EFEA;
 }
 
 .role-animation {
   position: relative;
   display: flex;
-  justify-content: center;   /* center horizontally */
-  align-items: center;       /* center vertically */
-  height: 1.5em;             /* Adjust based on your text size */
-  font-size: 1.5rem;         /* Optional: make it a bit larger */
+  justify-content: center;   
+  align-items: center;      
+  height: 1.5em;            
+  font-size: 1.5rem;       
   overflow: hidden;
   color: #F4EBD0;
 }
@@ -232,14 +262,8 @@ section {
   font-size: 3rem;
   font-weight: 600;
   color: #F2EFEA;
-  margin-top: 1rem;
-}
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  margin-top: 0.1rem;
+  text-align: center;
 }
 
 /* ICONS */
@@ -259,7 +283,8 @@ section {
 }
 
 .btn {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 14px;
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
@@ -298,11 +323,22 @@ section {
   color: #241D1D;
 }
 
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  align-items: center;
+}
 
 #socials-container .icon {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 6px; 
+  margin: 0 1px;
   transition: transform 0.2s ease;
 }
 
@@ -330,6 +366,7 @@ section {
 /* ABOUT SECTION */
 
 #about {
+  padding-top: 10vh;
   position: relative;
 }
 
@@ -338,7 +375,7 @@ section {
   margin-bottom: 2rem;
 }
 
-.section__text__p1 {
+.about_intro {
   text-align: center;
   font-weight: 600;
   color: rgb(85, 85, 85);

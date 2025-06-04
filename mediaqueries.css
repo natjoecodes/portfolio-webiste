@@ -6,6 +6,11 @@
 
   #desktop-nav {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
 
   #hamburger-nav {
@@ -14,7 +19,12 @@
     align-items: center;
     padding: 0 2rem;
     position: relative;
-    height: 17vh;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
 
   .menu-links {

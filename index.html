@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/NJ-Favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Rxj5qUz0nY…"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Nathan Jose Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Nathan Jose</div>
+        <div class="logo" onclick="location.href='./#profile'">Nathan Jose</div>
         <div>
             <ul class="nav-links">
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#leadership">Leadership</a></li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about"><i class="fa-solid fa-circle-user"></i><span>  About Me</span></a></li>
+              <li><a href="#projects"><i class="fa-solid fa-code"></i><span>  Projects</span></a></li>
+              <li><a href="#leadership"><i class="fa-solid fa-chess"></i><span> Leadership</span></a></li>
+              <li><a href="#resume"><i class="fa-solid fa-file-lines"></i><span>  Resume</span></a></li>
+              <li><a href="#contact"><i class="fa-solid fa-phone"></i><span> Contact</span></a></li>
             </ul>
         </div>
     </nav>
@@ -29,255 +37,258 @@
             <span></span>
           </div>
           <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#leadership" onclick="toggleMenu()">Leadership</a></li>
-            <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#about" onclick="toggleMenu()"><i class="fa-solid fa-circle-user"></i> About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()"><i class="fa-solid fa-code"></i> Projects</a></li>
+            <li><a href="#leadership" onclick="toggleMenu()"><i class="fa-solid fa-chess"></i>  Leadership</a></li>
+            <li><a href="#resume" onclick="toggleMenu()"><i class="fa-solid fa-file-lines"></i> Resume</a></li>
+            <li><a href="#contact" onclick="toggleMenu()"><i class="fa-solid fa-phone"></i></i>  Contact</a></li>
           </div>
         </div>
-      </nav>
-      <section id="profile">
-        <div class="profile-content">
-          <div class="section__text">
-            <p class="section__text__p101">Hello, I'm</p>
-            <h1 class="title">Nathan Jose V</h1>
-            <p class="section__text__p2 role-animation">
-              <span class="active">Engineering Undergrad</span>
-              <span>IEEE Student Leader</span>
-              <span>AI Enthusiast</span>
-              <span>Aspiring Software Developer</span>
-            </p>
-            <div class="btn-container">
-              <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-              <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-              <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/in/natjoe'">
-              <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/natjoecodes'">
-            </div>
+    </nav>
+    <section id="profile">
+      <div class="profile-content">
+        <div class="section__text">
+          <p class="section_intro">Hello, I'm</p>
+          <h1 class="title">Nathan Jose V</h1>
+          <p class="section__text__p2 role-animation">
+            <span class="active">Engineering Undergrad</span>
+            <span>IEEE Student Leader</span>
+            <span>AI Enthusiast</span>
+            <span>Aspiring Software Developer</span>
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+          </div>
+          <div id="socials-container">
+            <img src="./assets/icons8-linkedin-100.png" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/in/natjoe'">
+            <img src="./assets/github-icon.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/natjoecodes'">
+            <img src="./assets/x-icon.png" alt="X" class="icon" onclick="location.href='https://x.com/natjoegraphy'">
+            <img src="./assets/instagram-final.png" alt="Instagram" class="icon" onclick="location.href='https://www.instagram.com/_nat_joe_/'">
+            <img src="./assets/facebook.png" alt="Facebook" class="icon" onclick="location.href='https://www.facebook.com/nathanjosev/'">
           </div>
         </div>
-        <img 
-          src="./assets/arrow.png" 
-          alt="Arrow icon" 
-          class="icon arrow"
-          onclick="location.href='./#about'"
-        />
-      </section>
-      <section id="about">
-        <div class="about-heading">
-          <p class="section__text__p1">Get To Know More</p>
-          <h1 class="title">About Me</h1>
+      </div>
+      <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+    <section id="about">
+      <div class="about-heading">
+        <p class="about_intro">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+      </div>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
         </div>
-        <div class="section-container">
-          <div class="section_pic-container">
-            <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
-          </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                <h3>Experience</h3>
-                <p>Computer Science Educator<br />2+ Years</p>
-              </div>
-              <div class="details-container">
-                <img src="./assets/education.png" alt="Education icon" class="icon" />
-                <h3>Education</h3>
-                <p>B.Tech, Applied Electronics & Instrumentation Engineering</p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>I'm Nathan Jose V., a fourth year Applied Electronics & Instrumentation 
-              Engineering undergrad at 
-              Government Engineering College Kozhikode. Passionate about 
-              technology and education, I actively engage in academic, technical, 
-              and leadership roles to bridge the gap between theory and real-world 
-              applications.</p>
-            </div>
-          </div>
-        </div>
-        <img 
-          src="./assets/arrow.png" 
-          alt="Arrow icon" 
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-          />
-      </section>
-      <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Technical Profile</h1>
-        <div class="experience-details-container">
+        <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <h2 class="experience-sub-title">Core Technologies</h2>
-              <div class="article-container">
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>C/C++</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Java</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Python</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Data Structure</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-              </div>
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>Computer Science Educator<br />2+ Years</p>
             </div>
             <div class="details-container">
-              <h2 class="experience-sub-title">Web Development</h2>
-              <div class="article-container">
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Advanced</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Advanced</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Javascript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Git</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Tech, Applied Electronics & Instrumentation Engineering</p>
             </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Non Technical Skills</h2>
-              <div class="article-container">
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Leadership</h3>
-                    <p> </p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Team Work</h3>
-                    <p>  </p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Time Management</h3>
-                    <p>  </p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Problem Solving</h3>
-                    <p>  </p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                  <div>
-                    <h3>Communication</h3>
-                    <p>  </p>
-                  </div>
-                </article>
-              </div>
+          </div>
+          <div class="text-container">
+            <p>I'm Nathan Jose V., a fourth year Applied Electronics & Instrumentation 
+            Engineering undergrad at 
+            Government Engineering College Kozhikode. Passionate about 
+            technology and education, I actively engage in academic, technical, 
+            and leadership roles to bridge the gap between theory and real-world 
+            applications.</p>
+          </div>
+        </div>
+      </div>
+      <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technical Profile</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Core Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>C/C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Data Structure</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>CSS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Non Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Leadership</h3>
+                  <p> </p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Team Work</h3>
+                  <p>  </p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Time Management</h3>
+                  <p>  </p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Problem Solving</h3>
+                  <p>  </p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Communication</h3>
+                  <p>  </p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-        <img 
-          src="./assets/arrow.png" 
-          alt="Arrow icon" 
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-          />
-      </section>
-      <section class="timeline-section" id="leadership">
-        <h2>My Leadership Timeline</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Student Representative</h3>
-              <p><b>IEEE Computer Society</b><br>Kerala Chapter</p>
-              <span class="timeline-date">Jan 2025 – Present</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Immediate Past Chair & Mentor</h3>
-              <p><b>IEEE Computer Society</b> Student Branch Chapter<br>Government Engineering College Kozhikode</p>
-              <span class="timeline-date">Jan 2025 – Present</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Malabar Hub Student Representative</h3>
-              <p><b>IEEE Computer Society</b><br>Kerala Chapter</p>
-              <span class="timeline-date">Jan 2024 – Jan 2025</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Founding Chairperson</h3>
-              <p><b>IEEE Computer Society</b> Student Branch Chapter<br>Government Engineering College Kozhikode</p>
-              <span class="timeline-date">Jan 2024 – Jan 2025</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Joint Convener</h3>
-              <p><b>The Dailies Film Club</b><br>Government Engineering College Kozhikode</p>
-              <span class="timeline-date">Jan 2024 – Jan 2025</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Technical Head</h3>
-              <p><b>Lakshya Tech Fest</b><br>Government Engineering College Kozhikode</p>
-              <span class="timeline-date">Jan 2024 – May 2024</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Technical Team Member</h3>
-              <p><b>VIBE (Venture for Innovation Business and Entrepreneurship)</b><br>Government Engineering College Kozhikodee</p>
-              <span class="timeline-date">Mar 2023 – Jan 2024</span>
-            </div>
+      </div>
+      <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section class="timeline-section" id="leadership">
+      <h2>My Leadership Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Student Representative</h3>
+            <p><b>IEEE Computer Society</b><br>Kerala Chapter</p>
+            <span class="timeline-date">Jan 2025 – Present</span>
           </div>
         </div>
-      </section>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Immediate Past Chair & Mentor</h3>
+            <p><b>IEEE Computer Society</b> Student Branch Chapter<br>Government Engineering College Kozhikode</p>
+            <span class="timeline-date">Jan 2025 – Present</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Malabar Hub Student Representative</h3>
+            <p><b>IEEE Computer Society</b><br>Kerala Chapter</p>
+            <span class="timeline-date">Jan 2024 – Jan 2025</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Founding Chairperson</h3>
+            <p><b>IEEE Computer Society</b> Student Branch Chapter<br>Government Engineering College Kozhikode</p>
+            <span class="timeline-date">Jan 2024 – Jan 2025</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Joint Convener</h3>
+            <p><b>The Dailies Film Club</b><br>Government Engineering College Kozhikode</p>
+            <span class="timeline-date">Jan 2024 – Jan 2025</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Technical Head</h3>
+            <p><b>Lakshya Tech Fest</b><br>Government Engineering College Kozhikode</p>
+            <span class="timeline-date">Jan 2024 – May 2024</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Technical Team Member</h3>
+            <p><b>VIBE (Venture for Innovation Business and Entrepreneurship)</b><br>Government Engineering College Kozhikodee</p>
+            <span class="timeline-date">Mar 2023 – Jan 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
