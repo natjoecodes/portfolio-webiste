@@ -23,25 +23,14 @@ setTimeout(() => {
 }, 1000); // initial delay for first role
 
 
-/*LEADERSHIP Timeline */
+/*button bottom to top Timeline */
 
-// Scroll-based animation for timeline
-document.addEventListener("DOMContentLoaded", () => {
-  const items = document.querySelectorAll(".timeline-item");
+const backToTopBtn = document.querySelector(".back-to-top");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
-
-  items.forEach((item) => observer.observe(item));
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
 });
