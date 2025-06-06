@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(to bottom right, #f4f1ee, #e6dace);
   margin: 0;
-  padding-top: 0vh;
+  padding-top: 8vh;
 }
 
 html {
@@ -167,7 +167,7 @@ nav {
   top: 100%;
   right: 0;
   background-color: white;
-  width: 100vw;
+  width: 100%;
   max-height: 0;
   overflow: hidden;
   flex-direction: column;
@@ -300,14 +300,25 @@ section {
 /* ICONS */
 
 .icon {
+  align-items: center;
+  font-size: 25px; 
+  color: #FFFFF0;
   cursor: pointer;
-  height: 1rem;
+  margin: 10px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  filter: brightness(120%);
 }
 
 /* BUTTONS */
 
 .btn-container {
+  align-items: center;
   margin-top: 1.5rem;
+  padding-bottom: 3px;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -526,101 +537,37 @@ section {
   width: 300px;
 }
 
-
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
-/* CONTACT */
-
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
-
-/* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
-}
-
 /*LEADERSHIP (timeline-section)*/
 
 #leadership {
   margin: 0;
+  padding: 5rem 1rem 2rem 1rem;
   width: 100%;
+  background: none;
+  position: relative;
+  z-index: 0;
+  height: auto !important;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-.leadership-modern {
-  width: 100vw;
-  background: linear-gradient(135deg, #f0f4f8, #e9eef5);
-  font-family: 'Poppins', sans-serif;
+#leadership .vanta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+#leadership > * {
   position: relative;
-  overflow: hidden;
-  padding: 5rem; /* vertical padding only */
-  padding-bottom: 2rem;
-  box-sizing: border-box;
+  z-index: 1;
+}
+
+#leadership > *:not(.vanta-bg) {
+  position: relative;
+  z-index: 1;
 }
 
 .section-title {
@@ -689,7 +636,7 @@ footer p {
   justify-content: space-between;
   border-top: 1px dashed #ccc;
   padding: 10px 0;
-  font-size: 0.95em;
+  font-size: 1em;
   color: #374151;
 }
 
@@ -748,7 +695,7 @@ footer p {
 
 .site-footer {
   background: transparent;
-  padding: 4rem 0 2rem;
+  padding: 4rem 0 0.5rem;
   margin: 0 auto;
   text-align: center;
   border-top: 1px solid #ddd;
@@ -795,22 +742,22 @@ footer p {
   background-color: #944f1f;
 }
 
-.social-links {
+#footer-socials {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
 }
 
-.social-links a {
-  color: #b56b2d;
-  font-size: 1.25rem;
+#footer-socials .icon {
+  color: #b56b2d; /* or whatever footer color you want */
+  font-size: 25px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover {
+#footer-socials .icon:hover {
+  color: #8e4c1e; /* optional hover color for footer */
   transform: translateY(-3px);
-  color: #944f1f;
 }
 
 .dot {
@@ -823,3 +770,4 @@ footer .copyright {
   color: #888;
   margin-top: 2rem;
 }
+

@@ -16,206 +16,209 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo" onclick="location.href='./#profile'">Nathan Jose</div>
-        <div>
-            <ul class="nav-links">
-              <li><a href="#about"><i class="fa-solid fa-circle-user"></i><span>  About Me</span></a></li>
-              <li><a href="#projects"><i class="fa-solid fa-code"></i><span>  Projects</span></a></li>
-              <li><a href="#leadership"><i class="fa-solid fa-chess"></i><span> Leadership</span></a></li>
-              <li><a href="#resume"><i class="fa-solid fa-file-lines"></i><span>  Resume</span></a></li>
-              <li><a href="#contact"><i class="fa-solid fa-phone"></i><span> Contact</span></a></li>
-            </ul>
+  <div id="vanta-bg"></div>
+  <nav id="desktop-nav">
+      <div class="logo" onclick="location.href='./#profile'">Nathan Jose</div>
+      <div>
+          <ul class="nav-links">
+            <li><a href="#about"><i class="fa-solid fa-circle-user"></i><span>  About Me</span></a></li>
+            <li><a href="#projects"><i class="fa-solid fa-code"></i><span>  Projects</span></a></li>
+            <li><a href="#leadership"><i class="fa-solid fa-chess"></i><span> Leadership</span></a></li>
+            <li><a href="#resume"><i class="fa-solid fa-file-lines"></i><span>  Resume</span></a></li>
+            <li><a href="#contact"><i class="fa-solid fa-phone"></i><span> Contact</span></a></li>
+          </ul>
+      </div>
+  </nav>
+  <nav id="hamburger-nav">
+      <div class="logo">Nathan Jose</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Nathan Jose</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()"><i class="fa-solid fa-circle-user"></i> About</a></li>
-            <li><a href="#projects" onclick="toggleMenu()"><i class="fa-solid fa-code"></i> Projects</a></li>
-            <li><a href="#leadership" onclick="toggleMenu()"><i class="fa-solid fa-chess"></i>  Leadership</a></li>
-            <li><a href="#resume" onclick="toggleMenu()"><i class="fa-solid fa-file-lines"></i> Resume</a></li>
-            <li><a href="#contact" onclick="toggleMenu()"><i class="fa-solid fa-phone"></i>  Contact</a></li>
-          </div>
-        </div>
-    </nav>
-    <section id="profile">
-      <div class="profile-content">
-        <div class="section__text">
-          <p class="section_intro">Hello, I'm</p>
-          <h1 class="title">Nathan Jose V</h1>
-          <p class="section__text__p2 role-animation">
-            <span class="active">Engineering Undergrad</span>
-            <span>IEEE Student Leader</span>
-            <span>AI Enthusiast</span>
-            <span>Aspiring Software Developer</span>
-          </p>
-          <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
-          </div>
-          <div id="socials-container">
-            <img src="./assets/icons8-linkedin-100.png" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/in/natjoe'">
-            <img src="./assets/github-icon.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/natjoecodes'">
-            <img src="./assets/x-icon.png" alt="X" class="icon" onclick="location.href='https://x.com/natjoegraphy'">
-            <img src="./assets/instagram-final.png" alt="Instagram" class="icon" onclick="location.href='https://www.instagram.com/_nat_joe_/'">
-            <img src="./assets/facebook.png" alt="Facebook" class="icon" onclick="location.href='https://www.facebook.com/nathanjosev/'">
-          </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()"><i class="fa-solid fa-circle-user"></i> About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()"><i class="fa-solid fa-code"></i> Projects</a></li>
+          <li><a href="#leadership" onclick="toggleMenu()"><i class="fa-solid fa-chess"></i>  Leadership</a></li>
+          <li><a href="#resume" onclick="toggleMenu()"><i class="fa-solid fa-file-lines"></i> Resume</a></li>
+          <li><a href="#contact" onclick="toggleMenu()"><i class="fa-solid fa-phone"></i>  Contact</a></li>
         </div>
       </div>
-      <img 
-        src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon-arrow"
-        onclick="location.href='./#about'"
-      />
-    </section>
-    <section id="about">
-      <div class="about-heading">
-        <h1 class="title">About Me</h1>
-      </div>
-      <div class="section-container">
-        <div class="pic-wrapper">
-          <img src="./assets/ab1.jpg" alt="Profile picture" class="about-pic"/>
+  </nav>
+  <section id="profile">
+    <div class="profile-content">
+      <div class="section__text">
+        <p class="section_intro">Hello, I'm</p>
+        <h1 class="title">Nathan Jose V</h1>
+        <p class="section__text__p2 role-animation">
+          <span class="active">Engineering Undergrad</span>
+          <span>IEEE Student Leader</span>
+          <span>AI Enthusiast</span>
+          <span>Aspiring Software Developer</span>
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
         </div>
-        <div class="text-container">
-          <p>I'm Nathan Jose V, a final year <b>Applied Electronics & Instrumentation 
-          Engineering undergrad</b> at Government Engineering College Kozhikode. I currently serve as the 
-          <b>Student Representative</b> of the <b>IEEE Computer Society Kerala Chapter</b> and the Immediate Past Chair and Mentor of <b>IEEE CS SBC GEC Kozhikode</b>.
-          <br><br>Alongside my academics, I work part-time as a <b>High School Computer Science Educator</b>, teaching students from grades 9 to 12
-            across multiple Educational Boards.</p>
-        </div>
-        <div class="pic-wrapper">
-          <img src="./assets/ab3.jpg" alt="Profile picture" class="about-pic"/>
-        </div>
-      </div>
-    <div class="about-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <i class="fa-solid fa-building-columns about-icon"></i>
-          <h3>Education</h3>
-          <p>B.Tech, Applied Electronics & Instrumentation Engineering</p>
-        </div>
-        <div class="details-container">
-          <i class="fa-solid fa-chess about-icon"></i>
-          <h3>Leadership</h3>
-          <p>Student Representative,<br>IEEE CS Kerala Chapter</p>
-        </div>
-        <div class="details-container">
-          <i class="fa-solid fa-briefcase about-icon"></i>
-          <h3>Experience</h3>
-          <p>Computer Science Educator<br>Freelance</p>
+        <div id="socials-container">
+          <i class="fab fa-linkedin icon" title="LinkedIn" onclick="location.href='https://linkedin.com/in/natjoe'"></i>
+          <i class="fab fa-github icon" title="Github" onclick="location.href='https://github.com/natjoecodes'"></i>
+          <i class="fab fa-x-twitter icon" title="X" onclick="location.href='https://x.com/natjoegraphy'"></i>
+          <i class="fab fa-instagram icon" title="Instagram" onclick="location.href='https://www.instagram.com/_nat_joe_/'"></i>
+          <i class="fab fa-facebook icon" title="facebook" onclick="location.href='https://www.facebook.com/nathanjosev/'"></i>
         </div>
       </div>
     </div>
-    </section>
-    <section id="leadership" class="leadership-modern">
-  <h2 class="section-title">My Leadership Journey</h2>
-  <div class="timeline-modern">
-
-    <div class="timeline-entry">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <h3 class="org"><b>IEEE Computer Society</b> Kerala Chapter</h3>
-        <div class="role-list">
-          <div class="role-entry">
-            <span class="role-title">Student Representative</span>
-            <span class="role-date">Jan 2025 – Present</span>
-          </div>
-          <div class="role-entry">
-            <span class="role-title">Malabar Hub Student Representative</span>
-            <span class="role-date">Jan 2024 – Jan 2025</span>
-          </div>
-        </div>
+    <img 
+      src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon-arrow"
+      onclick="location.href='./#about'"
+    />
+  </section>
+  <section id="about">
+    <div class="about-heading">
+      <h1 class="title">About Me</h1>
+    </div>
+    <div class="section-container">
+      <div class="pic-wrapper">
+        <img src="./assets/ab1.jpg" alt="Profile picture" class="about-pic"/>
+      </div>
+      <div class="text-container">
+        <p>I'm Nathan Jose V, a final year <b>Applied Electronics & Instrumentation 
+        Engineering undergrad</b> at Government Engineering College Kozhikode. I currently serve as the 
+        <b>Student Representative</b> of the <b>IEEE Computer Society Kerala Chapter</b> and the Immediate Past Chair and Mentor of <b>IEEE CS SBC GEC Kozhikode</b>.
+        <br><br>Alongside my academics, I work part-time as a <b>High School Computer Science Educator</b>, teaching students from grades 9 to 12
+          across multiple Educational Boards.</p>
+      </div>
+      <div class="pic-wrapper">
+        <img src="./assets/ab3.jpg" alt="Profile picture" class="about-pic"/>
       </div>
     </div>
-
-    <div class="timeline-entry">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <h3 class="org"><b>IEEE Computer Society</b> GEC Kozhikode SB Chapter</h3>
-        <div class="role-list">
-          <div class="role-entry">
-            <span class="role-title">Immediate Past Chair & Mentor</span>
-            <span class="role-date">Jan 2025 – Present</span>
-          </div>
-          <div class="role-entry">
-            <span class="role-title">Founding Chairperson</span>
-            <span class="role-date">Jan 2024 – Jan 2025</span>
-          </div>
-        </div>
+  <div class="about-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <i class="fa-solid fa-building-columns about-icon"></i>
+        <h3>Education</h3>
+        <p>B.Tech, Applied Electronics & Instrumentation Engineering</p>
+      </div>
+      <div class="details-container">
+        <i class="fa-solid fa-chess about-icon"></i>
+        <h3>Leadership</h3>
+        <p>Student Representative,<br>IEEE CS Kerala Chapter</p>
+      </div>
+      <div class="details-container">
+        <i class="fa-solid fa-briefcase about-icon"></i>
+        <h3>Experience</h3>
+        <p>Computer Science Educator<br>Freelance</p>
       </div>
     </div>
-
-    <div class="timeline-entry">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <h3 class="org"><b>The Dailies Film Club</b> - GEC Kozhikode</h3>
+  </div>
+  </section>
+  <section id="leadership">
+<h2 class="section-title">My Leadership Journey</h2>
+<div class="timeline-modern">
+  <div class="timeline-entry">
+    <div class="timeline-dot"></div>
+    <div class="timeline-card">
+      <h3 class="org"><b>IEEE Computer Society</b> Kerala Chapter</h3>
+      <div class="role-list">
         <div class="role-entry">
-          <span class="role-title">Joint Convener</span>
+          <span class="role-title">Student Representative</span>
+          <span class="role-date">Jan 2025 – Present</span>
+        </div>
+        <div class="role-entry">
+          <span class="role-title">Malabar Hub Student Representative</span>
           <span class="role-date">Jan 2024 – Jan 2025</span>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="timeline-entry">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <h3 class="org"><b>Lakshya Tech Fest</b> - GEC Kozhikode</h3>
+  <div class="timeline-entry">
+    <div class="timeline-dot"></div>
+    <div class="timeline-card">
+      <h3 class="org"><b>IEEE Computer Society</b> GEC Kozhikode SB Chapter</h3>
+      <div class="role-list">
         <div class="role-entry">
-          <span class="role-title">Technical Head</span>
-          <span class="role-date">Jan 2024 – May 2024</span>
+          <span class="role-title">Immediate Past Chair & Mentor</span>
+          <span class="role-date">Jan 2025 – Present</span>
         </div>
-      </div>
-    </div>
-
-    <div class="timeline-entry">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <h3 class="org"> <b>Venture for Innovation Business & Entrepreneurship (VIBE)</b> – GEC Kozhikode</h3>
-        <div class="role-list">
-          <div class="role-entry">
-            <span class="role-title">Technical Team Member</span>
-            <span class="role-date">Jun 2023 – Jan 2024</span>
-          </div>
-          <div class="role-entry">
-            <span class="role-title">Web Developer</span>
-            <span class="role-date">Mar 2023 – Jun 2023</span>
-          </div>
+        <div class="role-entry">
+          <span class="role-title">Founding Chairperson</span>
+          <span class="role-date">Jan 2024 – Jan 2025</span>
         </div>
       </div>
     </div>
   </div>
-    </section>
-    <footer class="site-footer">
-      <div class="footer-container">
-        <h2 class="footer-heading">Let’s Build Something Great Together</h2>
-        <p class="footer-text">
-          Open to opportunities in engineering, leadership, and tech-driven collaboration.
-        </p>
-        <a href="#contact" class="footer-btn">Start a Conversation <i class="fas fa-arrow-right"></i></a>
 
-        <div class="social-links">
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-x-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-
-        <p class="copyright">Copyright 
-          &copy; 2025 Nathan Jose V <span class="dot">•</span> Crafted with vision and intent
-        </p>
+  <div class="timeline-entry">
+    <div class="timeline-dot"></div>
+    <div class="timeline-card">
+      <h3 class="org"><b>The Dailies Film Club</b> - GEC Kozhikode</h3>
+      <div class="role-entry">
+        <span class="role-title">Joint Convener</span>
+        <span class="role-date">Jan 2024 – Jan 2025</span>
       </div>
-    </footer>
-    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-    <script src="script.js"></script>
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-dot"></div>
+    <div class="timeline-card">
+      <h3 class="org"><b>Lakshya Tech Fest</b> - GEC Kozhikode</h3>
+      <div class="role-entry">
+        <span class="role-title">Technical Head</span>
+        <span class="role-date">Jan 2024 – May 2024</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-entry">
+    <div class="timeline-dot"></div>
+    <div class="timeline-card">
+      <h3 class="org"> <b>Venture for Innovation Business & Entrepreneurship (VIBE)</b> – GEC Kozhikode</h3>
+      <div class="role-list">
+        <div class="role-entry">
+          <span class="role-title">Technical Team Member</span>
+          <span class="role-date">Jun 2023 – Jan 2024</span>
+        </div>
+        <div class="role-entry">
+          <span class="role-title">Web Developer</span>
+          <span class="role-date">Mar 2023 – Jun 2023</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <h2 class="footer-heading">Let’s Build Something Great Together</h2>
+      <p class="footer-text">
+        Open to opportunities in engineering, leadership, and tech-driven collaboration.
+      </p>
+      <a href="#contact" class="footer-btn">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+
+      <div class="social-links" id="footer-socials">
+        <i class="fab fa-linkedin icon" title="LinkedIn" onclick="location.href='https://linkedin.com/in/natjoe'"></i>
+        <i class="fab fa-github icon" title="Github" onclick="location.href='https://github.com/natjoecodes'"></i>
+        <i class="fab fa-x-twitter icon" title="X" onclick="location.href='https://x.com/natjoegraphy'"></i>
+        <i class="fab fa-instagram icon" title="Instagram" onclick="location.href='https://www.instagram.com/_nat_joe_/'"></i>
+        <i class="fab fa-facebook icon" title="facebook" onclick="location.href='https://www.facebook.com/nathanjosev/'"></i>
+      </div>
+
+      <p class="copyright">
+        &copy; 2025 Nathan Jose V <span class="dot">•</span> Built to connect, collaborate, and create.
+      </p>
+    </div>
+  </footer>
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
