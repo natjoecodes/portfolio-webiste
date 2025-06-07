@@ -69,3 +69,26 @@ document.addEventListener("DOMContentLoaded", function () {
     zoom: 1.05
   });
 });
+
+/* PROJECT PAGE */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const vantaProject = document.getElementById("vanta-project");
+  if (vantaProject) {
+    VANTA.NET({
+  el: "#vanta-project",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.0,
+  scaleMobile: 1.0,
+  color: 0xff3f81,              // Elegant white lines
+  backgroundColor: 0x23153c,    // Deep navy (like GitHub dark mode)
+  points: 10.0,
+  maxDistance: 20.0,
+  spacing: 15.0
+});
+  }
+});

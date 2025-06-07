@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Nathan Jose</title>
+  <link rel="icon" type="image/x-icon" href="./assets/NJ-Favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='./#profile'">Nathan Jose</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about"><i class="fa-solid fa-circle-user"></i><span> About Me</span></a></li>
+                <li><a href="project.html"><i class="fa-solid fa-code"></i><span> Projects</span></a></li>
+                <li><a href="leadership.html"><i class="fa-solid fa-chess"></i><span> Leadership</span></a></li>
+                <li><a href="#resume"><i class="fa-solid fa-file-lines"></i><span> Resume</span></a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i><span> Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nathan Jose</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()"><i class="fa-solid fa-circle-user"></i> About</a></li>
+                <li><a href="project.html" onclick="toggleMenu()"><i class="fa-solid fa-code"></i> Projects</a></li>
+                <li><a href="leadership.html" onclick="toggleMenu()"><i class="fa-solid fa-chess"></i> Leadership</a></li>
+                <li><a href="#resume" onclick="toggleMenu()"><i class="fa-solid fa-file-lines"></i> Resume</a></li>
+                <li><a href="#contact" onclick="toggleMenu()"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div id="vanta-project"></div>
+    <section id="projects-section">
+        <h1 class="section-title">My Projects</h1>
+        <div class="projects-grid">
+            <!-- Example Project Card -->
+             <div class="project-card">
+                <div class="project-text">
+                    <h3>Portfolio Website</h3>
+                    <span class="tech-stack">HTML5 | CSS3 | JS</span>
+                    <ul class="project-points">
+                        <li>Built from scratch using HTML, CSS & JavaScript – no templates used</li>
+                        <li>Fully responsive design with smooth animations and dynamic visuals</li>
+                        <li>Showcases projects, leadership, and certifications in a sleek layout</li>
+                        <li>Integrated Vanta.js for an interactive 3D background experience</li>
+                        <li>Modular and scalable codebase for easy updates and future expansions</li>
+                    </ul>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/your-repo-link" target="_blank" class="bn bn1">View GitHub Repo</a>
+                    <a href="./assets/project-photo.jpg" target="_blank" class="bn  bn2">View Photo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>Smart Pet Feeder</h3>
+                    <span class="tech-stack">ESP32 | C++ | RTC Module</span>
+                    <ul class="project-points">
+                        <li>An ESP32-based project that dispenses food at set times using 
+                        a real-time clock (RTC) module</li>
+                        <li>Detects the pet with an ultrasonic sensor and uses a buzzer to alert the pet the feeding time</li>
+                        <li>A manual feed button is also included for convenience</li>
+                        <li>Programmed ESP32 that controls the entire device</li>
+                    </ul>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/your-repo-link" target="_blank" class="bn bn1">View GitHub Repo</a>
+                    <a href="./assets/project-photo.jpg" target="_blank" class="bn  bn2">View Photo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>Wireless Stethoscope</h3>
+                    <span class="tech-stack">Front End | Python | Flask</span>
+                    <ul class="project-points">
+                        <li>Programmed the ESP32 to capture and transmit 
+                            heartbeat signals from the HW-484 sensor via Wi-Fi</li>
+                        <li>Developed a Flask-based web dashboard to stream and visualize the
+                             data in real-time, enabling remote health monitoring</li>
+                        <li>Integrated embedded systems, IoT communication, and full-stack development</li>
+                    </ul>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/your-repo-link" target="_blank" class="bn bn1">View GitHub Repo</a>
+                    <a href="./assets/project-photo.jpg" target="_blank" class="bn  bn2">View Photo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications-section">
+        <h1 class="section-title">Licenses & Certifications</h1>
+        <div class="certifications-grid">
+            <!-- Example Certification Card -->
+            <div class="cert-card">
+                <h3>Data Structure & Algorithms using Java</h3>
+                <p>Indian Institute of Technology Kharagpur</p>
+                <span class="cert-stack">Issued: Nov 2024</span>
+                <div class="project-buttons">
+                    <a href="./assets/ds.pdf" target="_blank" class="bn  bn2">View Credentials</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <h3>App Development Workshop</h3>
+                <p>Dyuthi Tech Fest Government Engineering College Thrissur</p>
+                <span class="cert-stack">Issued: Nov 2022</span>
+                <div class="project-buttons">
+                    <a href="./assets/gect.jpeg" target="_blank" class="bn  bn2">View Credentials</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <h3>Python</h3>
+                <p>Kaggle</p>
+                <span class="cert-stack">Issued: May 2023</span>
+                <div class="project-buttons">
+                    <a href="https://www.kaggle.com/learn/certification/natjoe/python" target="_blank" class="bn  bn2">View Credentials</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <h3>Prompt Design in Vertex AI</h3>
+                <p>Google Cloud</p>
+                <span class="cert-stack">Issued: Jul 2024</span>
+                <div class="project-buttons">
+                    <a href="https://www.cloudskillsboost.google/public_profiles/54e38bfb-4018-4eb0-905d-2ca14b615d38/badges/9849133?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" 
+                    target="_blank" class="bn  bn2">View Credentials</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <h3>Introduction to Generative AI</h3>
+                <p>Google Cloud</p>
+                <span class="cert-stack">Issued: Apr 2024</span>
+                <div class="project-buttons">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/TD92AHJQ6NUY"
+                     target="_blank" class="bn  bn2">View Credentials</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <h3>Introduction to Large Language Models</h3>
+                <p>Google Cloud</p>
+                <span class="cert-stack">Issued: Jul 2024</span>
+                <div class="project-buttons">
+                    <a href="https://www.cloudskillsboost.google/public_profiles/54e38bfb-4018-4eb0-905d-2ca14b615d38/badges/9847007?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+                     target="_blank" class="bn  bn2">View Credentials</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <h3>Introduction to Responsible AI</h3>
+                <p>Google Cloud</p>
+                <span class="cert-stack">Issued: Jul 2024</span>
+                <div class="project-buttons">
+                    <a href="https://www.cloudskillsboost.google/public_profiles/54e38bfb-4018-4eb0-905d-2ca14b615d38/badges/9847204?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+                     target="_blank" class="bn  bn2">View Credentials</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <h3>Responsible AI: Applying AI Principles with Google Cloud</h3>
+                <p>Google Cloud</p>
+                <span class="cert-stack">Issued: Jul 2024</span>
+                <div class="project-buttons">
+                    <a href="https://www.cloudskillsboost.google/public_profiles/54e38bfb-4018-4eb0-905d-2ca14b615d38/badges/9849142?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+                     target="_blank" class="bn  bn2">View Credentials</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <h3>Self Driving Electric Vehicles Workshop</h3>
+                <p>KSHITIJ IIT Kharagpur & Techmaghi</p>
+                <span class="cert-stack">Issued: Jan 2023</span>
+                <div class="project-buttons">
+                    <a href="./assets/iitmaghi.pdf"
+                     target="_blank" class="bn  bn2">View Credentials</a>
+                </div>
+            </div>
+            <!-- Add more certification cards as needed -->
+        </div>
+    </section>
+    <footer class="site-footer">
+    <div class="footer-container">
+      <h2 class="footer-heading">Let’s Build Something Great Together</h2>
+      <p class="footer-text">
+        Open to opportunities in engineering, leadership, and tech-driven collaboration.
+      </p>
+      <a href="#contact" class="footer-btn">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+
+      <div class="social-links" id="footer-socials">
+        <i class="fab fa-linkedin icon" title="LinkedIn" onclick="location.href='https://linkedin.com/in/natjoe'"></i>
+        <i class="fab fa-github icon" title="Github" onclick="location.href='https://github.com/natjoecodes'"></i>
+        <i class="fab fa-x-twitter icon" title="X" onclick="location.href='https://x.com/natjoegraphy'"></i>
+        <i class="fab fa-instagram icon" title="Instagram" onclick="location.href='https://www.instagram.com/_nat_joe_/'"></i>
+        <i class="fab fa-facebook icon" title="facebook" onclick="location.href='https://www.facebook.com/nathanjosev/'"></i>
+      </div>
+
+      <p class="copyright">
+        &copy; 2025 Nathan Jose V <span class="dot">•</span> Crafted with <i class="fa-solid fa-heart"></i> by Nathan Jose V.
+      </p>
+    </div>
+  </footer>
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
