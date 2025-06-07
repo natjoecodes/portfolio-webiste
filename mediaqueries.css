@@ -177,3 +177,16 @@
   gap: 5px;
 }
 
+
+/* LEADERSHIP PAGE*/
+
+@media (max-width: 768px) {
+  .leadership-grid {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .leadership-card {
+    flex: 0 1 100%;
+  }
+}
+

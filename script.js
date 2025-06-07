@@ -51,3 +51,21 @@ document.addEventListener("DOMContentLoaded", function () {
     zoom: 1.05
   });
 });
+
+
+/* Vanta.js WAVES effect for #leadership page */
+document.addEventListener("DOMContentLoaded", function () {
+  VANTA.FOG({
+    el: "#vanta-leadership",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    highlightColor: 0x6ecdf4,     // Arctic blue — luminous accent
+    midtoneColor: 0x1a2639,       // Midnight slate — refined balance
+    lowlightColor: 0x0a0f1a,      // Abyssal black-blue — depth and mystery
+    baseColor: 0xeaf6ff,          // Icy white-blue — for fresh contrast
+    blurFactor: 0.28,             // Balanced haze
+    speed: 1.1,
+    zoom: 1.05
+  });
+});
