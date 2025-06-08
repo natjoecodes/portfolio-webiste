@@ -190,3 +190,11 @@
   }
 }
 
+/*RESUME PAGE*/
+
+@media screen and (max-width: 768px) {
+  .resume-info-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}

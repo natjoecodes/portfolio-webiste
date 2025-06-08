@@ -92,3 +92,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
   }
 });
+
+/* RESUME PAGE */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const vantaResume = document.getElementById("vanta-resume");
+  if (vantaResume) {
+  VANTA.BIRDS({
+      el: "#vanta-resume",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      backgroundColor: 0xeaf6ff,
+      color1: 0x1a2639,
+      color2: 0x6ecdf4,
+      birdSize: 2.5,
+      wingSpan: 20.0,
+      speedLimit: 4.0,
+      separation: 30.0,
+      alignment: 50.0,
+      cohesion: 50.0,
+      quantity: 3.0
+    });
+  }
+});

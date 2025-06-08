@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume | Nathan Jose</title>
+  <link rel="icon" type="image/x-icon" href="./assets/NJ-Favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body class="resume-bg">
+    <div id="vanta-resume"></div>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='./#profile'">Nathan Jose</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about"><i class="fa-solid fa-circle-user"></i><span> About Me</span></a></li>
+                <li><a href="project.html"><i class="fa-solid fa-code"></i><span> Projects</span></a></li>
+                <li><a href="leadership.html"><i class="fa-solid fa-chess"></i><span> Leadership</span></a></li>
+                <li><a href="resume.html"><i class="fa-solid fa-file-lines"></i><span> Resume</span></a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i><span> Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nathan Jose</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()"><i class="fa-solid fa-circle-user"></i> About</a></li>
+                <li><a href="project.html" onclick="toggleMenu()"><i class="fa-solid fa-code"></i> Projects</a></li>
+                <li><a href="leadership.html" onclick="toggleMenu()"><i class="fa-solid fa-chess"></i> Leadership</a></li>
+                <li><a href="resume.html" onclick="toggleMenu()"><i class="fa-solid fa-file-lines"></i> Resume</a></li>
+                <li><a href="#contact" onclick="toggleMenu()"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <div class="resume-container">
+    <h1 class="resume-title">My Resume</h1>
+    <h3 class="resume-quote">"Sometimes life hits you in the head with a brick. Don't lose faith."<br>- Steve Jobs</h3>
+    <div class="resume-buttons">
+      <a href="assets/NathanJose_Resume.pdf" target="_blank" class="but1">View My Resume</a>
+      <a href="assets/NathanJose_Resume.pdf" download class="but2">Download My Resume</a>
+    </div>
+    <div class="resume-info-container">
+    
+        <div class="resume-info">
+            <h3>Personal Details</h3>
+            <ul class="resume-list">
+                <li><strong>Name : </strong>Nathan Jose V</li>
+                <li><strong>DOB : </strong>7th March 2003</li>
+                <li><strong>Gender : </strong>Male</li>
+                <li><strong>Nationality : </strong>Indian</li>
+                <li><strong>Home Town : </strong>Kochi, Kerala, India</li>
+                <li><strong>Languages : </strong><br>English (C1 Level - Advanced)<br>Malayalam (Native)<br>Hindi (Intermediate) </li>
+            </ul>
+        </div>
+
+    <div class="resume-info"> 
+        <h3>Education</h3>
+        <div class="edu-block">
+            <h4 class="institute">Government Engineering College Kozhikode</h4>
+            <h5 class="university">APJ Abdul Kalam Technological University</h5>
+            <span class="duration">Oct 2022 – Present</span>
+            <p class="degree"><strong>B.Tech in Applied Electronics & Instrumentation</strong></p>
+            <p><b>CGPA:</b> 7.28 / 10.0</p>
+            <p><b>Electives:</b> Internet of Things, Python for Machine Learning, SCADA</p>
+        </div>
+
+        <div class="edu-block">
+            <h4 class="institute">Don Bosco Senior Secondary School Vaduthala, Kochi</h4>
+            <h5 class="university">Counsil of Indian School Cetrificate Examinations</h5>
+            <span class="duration">Jun 2019 – Mar 2021</span>
+            <p class="degree"><strong>ISC – Computer Science (P+C+M)</strong></p>
+            <p><b>Percentage:</b> 88%</p>
+        </div>
+
+        <div class="edu-block">
+            <h4 class="institute">Don Bosco Senior Secondary School Vaduthala, Kochi</h4>
+            <h5 class="university">Counsil of Indian School Cetrificate Examinations</h5>
+            <span class="duration">Mar 2019</span>
+            <p class="degree"><strong>ICSE (P+C+M+B)</strong></p>
+            <p><b>Percentage:</b> 94%</p>
+        </div>
+    </div>
+
+    <div class="resume-info">
+            <h3>Technical Skills</h3>
+            <ul class="resume-list">
+                <li><strong>C (Intermediate)</strong></li>
+                <li><strong>C++ (Intermediate)</strong></li>
+                <li><strong>Java (Advanced)</strong></li>
+                <li><strong>Python (Intermediate)</strong></li>
+                <li><strong>HTML5 (Advanced)</strong></li>
+                <li><strong>CSS3 (Advanced)</strong></li>
+                <li><strong>JavaScript (Intermediate)</strong></li>
+                <li><strong>Arduino Programming Language (Advanced)</strong></li>
+            </ul>
+        </div>
+
+        <div class="resume-info">
+            <h3>Soft Skills</h3>
+            <ul class="resume-list">
+                <li><strong>Leadership</strong></li>
+                <li><strong>Team Work</strong></li>
+                <li><strong>Communication</strong></li>
+                <li><strong>Problem Solving</strong></li>
+                <li><strong>Strategic Thinking</strong></li>
+                <li><strong>Decision Making</strong></li>
+                <li><strong>Conflict Resolution</strong></li>
+            </ul>
+        </div>
+
+        <div class="resume-info">
+            <h3>Positions Held</h3>
+            <ul class="resume-list">
+                <li>Student Representative, IEEE CS Kerala Chapter (2025)</li>
+                <li>Immediate Past Chair & Mentor, IEEE CS SBC GECK (2025)</li>
+                <li>Joint Convener, The Dailies Film Club GECK</li>
+                <li>Malabar Hub Student Representative, IEEE CS Kerala Chapter (2024)</li>
+                <li>Founding Chairperson, IEEE CS SBC GECK (2024)</li>
+                <li>Technical Head, Lakshya Tech Fest GECK (2024)</li>
+                <li>Class Representative, Batch of 2026 AE&I Engineering</li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <footer class="site-footer">
+    <div class="footer-container">
+      <h2 class="footer-heading">Let’s Build Something Great Together</h2>
+      <p class="footer-text">
+        Open to opportunities in engineering, leadership, and tech-driven collaboration.
+      </p>
+      <a href="#contact" class="footer-btn">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+
+      <div class="social-links" id="footer-socials">
+        <i class="fab fa-linkedin icon" title="LinkedIn" onclick="location.href='https://linkedin.com/in/natjoe'"></i>
+        <i class="fab fa-github icon" title="Github" onclick="location.href='https://github.com/natjoecodes'"></i>
+        <i class="fab fa-x-twitter icon" title="X" onclick="location.href='https://x.com/natjoegraphy'"></i>
+        <i class="fab fa-instagram icon" title="Instagram" onclick="location.href='https://www.instagram.com/_nat_joe_/'"></i>
+        <i class="fab fa-facebook icon" title="facebook" onclick="location.href='https://www.facebook.com/nathanjosev/'"></i>
+      </div>
+
+      <p class="copyright">
+        &copy; 2025 Nathan Jose V <span class="dot">•</span> Crafted with <i class="fa-solid fa-heart"></i> by Nathan Jose V.
+      </p>
+    </div>
+  </footer>
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
