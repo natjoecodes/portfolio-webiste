@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me | Nathan Jose</title>
+  <link rel="icon" type="image/x-icon" href="./assets/NJ-Favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body> 
+  <div id="vanta-contact"></div>
+  <nav id="desktop-nav">
+      <div class="logo" onclick="location.href='index.html#profile'">Nathan Jose</div>
+      <div>
+          <ul class="nav-links">
+              <li><a href="index.html#about"><i class="fa-solid fa-circle-user"></i><span> About Me</span></a></li>
+              <li><a href="project.html"><i class="fa-solid fa-code"></i><span> Projects</span></a></li>
+              <li><a href="leadership.html"><i class="fa-solid fa-chess"></i><span> Leadership</span></a></li>
+              <li><a href="resume.html"><i class="fa-solid fa-file-lines"></i><span> Resume</span></a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-phone"></i><span> Contact</span></a></li>
+          </ul>
+      </div>
+  </nav>
+  <nav id="hamburger-nav">
+      <div class="logo" onclick="location.href='index.html#profile'">Nathan Jose</div>
+      <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="menu-links">
+              <li><a href="index.html#about" onclick="toggleMenu()"><i class="fa-solid fa-circle-user"></i> About</a></li>
+              <li><a href="project.html" onclick="toggleMenu()"><i class="fa-solid fa-code"></i> Projects</a></li>
+              <li><a href="leadership.html" onclick="toggleMenu()"><i class="fa-solid fa-chess"></i> Leadership</a></li>
+              <li><a href="resume.html" onclick="toggleMenu()"><i class="fa-solid fa-file-lines"></i> Resume</a></li>
+              <li><a href="contact.html" onclick="toggleMenu()"><i class="fa-solid fa-phone"></i> Contact</a></li>
+          </div>
+      </div>
+  </nav>
+  <main>
+    <h1 class="contact-title1">Slide Into My Inbox</h1>
+    <h2 class="contact-title2">(Professionally, of course)</h2> 
+    <h3 class="contact-quote">Questions, ideas, or just a friendly hey? Shoot me a message—yes, it’s really me who replies.</h3>
+
+    <div class="contact-card-container">
+
+      <div class="contacts-card">
+        <div class="card-header">
+          <h2>Direct Contact</h2>
+          <p class="subtitle">Prefer direct communication? Here are the best ways to reach me quickly for immediate response:</p>
+        </div>
+        <div class="inner-cards">
+          <div class="inner-card">
+            <span class="con-icon"><i class="fa-solid fa-envelope"></i></span>
+            <a href="mailto:nathanjosev@gmail.com">Personal Email</a>
+          </div>
+          <div class="inner-card">
+            <span class="con-icon"><i class="fa-solid fa-envelope"></i></span>
+            <a href="mailto:nathanjosev@gmail.com">IEEE Email</a>
+          </div>
+          <div class="inner-card">
+            <span class="con-icon"><i class="fa-solid fa-phone"></i></span>
+            <p>+91 77360 08961</p>
+          </div>
+          <div class="inner-card">
+            <span class="con-icon"><i class="fa-brands fa-whatsapp"></i></span>
+            <a href="https://wa.me/917736008961" target="_blank">Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts-card">
+        <div class="card-header">
+          <h2>Social  Profiles</h2>
+          <p class="subtitle">Connect with me on Social Media or professional networks or explore my latest work and contributions:</p>
+        </div>
+        <div class="inner-cards">
+          <div class="inner-card">
+            <span class="con-icon"><i class="fa-brands fa-linkedin"></i></span>
+            <a href="https://linkedin.com/in/natjoe">LinkedIn</a>
+          </div><div class="inner-card">
+            <span class="con-icon"><i class="fa-brands fa-github"></i></span>
+            <a href="https://github.com/natjoecodes">GitHub</a>
+          </div><div class="inner-card">
+            <span class="con-icon"><i class="fa-brands fa-x-twitter"></i></span>
+            <a href="https://x.com/natjoegraphy">X</a>
+          </div><div class="inner-card">
+            <span class="con-icon"><i class="fa-brands fa-instagram"></i></span>
+            <a href="https://www.instagram.com/_nat_joe_/">Instagram</a>
+          </div><div class="inner-card">
+            <span class="con-icon"><i class="fa-brands fa-facebook"></i></span>
+            <a href="https://www.facebook.com/nathanjosev/">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts-card">
+        <div class="card-header">
+          <h2>Let's Connect</h2>
+          <p class="subtitle">Have a question, proposal, or just want to say hello? Fill out the form below and I'll get back to you!</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <h2 class="footer-heading">Let’s Build Something Great Together</h2>
+      <p class="footer-text">
+        Open to opportunities in engineering, leadership, and tech-driven collaboration.
+      </p>
+      <a href="contact.html" class="footer-btn">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+
+      <div class="social-links" id="footer-socials">
+        <i class="fab fa-linkedin icon" title="LinkedIn" onclick="location.href='https://linkedin.com/in/natjoe'"></i>
+        <i class="fab fa-github icon" title="Github" onclick="location.href='https://github.com/natjoecodes'"></i>
+        <i class="fab fa-x-twitter icon" title="X" onclick="location.href='https://x.com/natjoegraphy'"></i>
+        <i class="fab fa-instagram icon" title="Instagram" onclick="location.href='https://www.instagram.com/_nat_joe_/'"></i>
+        <i class="fab fa-facebook icon" title="facebook" onclick="location.href='https://www.facebook.com/nathanjosev/'"></i>
+      </div>
+
+      <p class="copyright">
+        &copy; 2025 Nathan Jose V <span class="dot">•</span> Crafted with <i class="fa-solid fa-heart"></i> by Nathan Jose V.
+      </p>
+    </div>
+  </footer>
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

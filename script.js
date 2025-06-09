@@ -116,3 +116,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+/* CONTACT PAGE */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const vantaContact = document.getElementById("vanta-contact");
+  if (vantaContact) {
+    VANTA.WAVES({
+    el: "#vanta-contact",
+  mouseControls: true,
+  touchControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  color: 0x7a9ba8,           // Balanced between bluish and grey
+  shininess: 50.00,
+  waveHeight: 20.00,
+  waveSpeed: 0.5,
+  zoom: 0.85,
+  backgroundColor: 0x0c171c
+    });
+  }
+});

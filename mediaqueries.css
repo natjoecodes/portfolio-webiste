@@ -198,3 +198,22 @@
     padding: 1.5rem;
   }
 }
+
+/*  PROJECT PAGE*/
+
+@media (max-width: 900px) {
+  .projects-grid,
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.5rem;
+  }
+}
+
+/*  contact PAGE*/
+
+@media (max-width: 900px) {
+  .contacts-card {
+    flex: 0 1 100%;
+  }
+}
