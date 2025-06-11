@@ -880,8 +880,8 @@ section {
 }
 
 /* Section Titles */
-.section-title {
-  padding-top: 4rem;
+.section-title101 {
+  padding: 4rem;
   text-align: center;
   font-size: 3em;
   font-weight: 700;
@@ -890,7 +890,7 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-.section-title101 {
+.section-title102 {
   padding-bottom: 4rem;
   text-align: center;
   font-size: 3em;

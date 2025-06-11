@@ -177,6 +177,9 @@
 
 /* LEADERSHIP PAGE*/
 
+  .section-title1 {
+    padding-top: 4rem;
+  }
   .leadership-grid {
     grid-template-columns: 1fr; /* One card per row */
   }
@@ -187,8 +190,20 @@
 
 /*RESUME PAGE*/
 
+  .resume-container {
+    padding: 2rem 1rem;
+    padding-top: 7rem;
+  }
+
   .resume-info-container {
     grid-template-columns: 1fr;
+    align-items: center;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+  }
+
+  .resume-info {
+    width: 100%;
     padding: 1.5rem;
   }
 
@@ -198,7 +213,12 @@
   .certifications-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2.5rem;
+
+  }
+
+  .section-title101 {
+    padding-top: 6rem;
+    min-width: 100%;
   }
 
 /*  CONTACT PAGE  */
