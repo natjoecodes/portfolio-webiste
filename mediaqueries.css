@@ -1,5 +1,7 @@
 @media screen and (max-width: 768px) {
-  /* Navigation */
+
+  /* Nav Bar */
+
   nav {
     display: none;
   }
@@ -29,7 +31,7 @@
 
   .menu-links {
     position: fixed;
-    top: 60px; /* height of hamburger nav */
+    top: 10vh; /* height of hamburger nav */
     right: 0;
     width: 100vw;
     max-height: 0;
@@ -51,6 +53,15 @@
     overflow-y: auto;
     display: flex;
   }
+
+
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
 
   /* Section & Layout */
   section {
@@ -85,22 +96,26 @@
 
   /* Profile Section */
   #profile {
+    background-position: right center;
     flex-direction: column;
+    justify-content: center;
     height: auto;
     gap: 2rem;
+    padding: 4rem 1.5rem;
     align-items: center;
     padding: 2rem 1rem;
   }
 
   .section__pic-container {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     margin: 0 auto 20px;
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .section__text {
     text-align: center;
+    margin-top: 100px;
   }
 
   .section__intro,
@@ -113,8 +128,20 @@
     font-size: 2rem;
   }
 
+  /*changing roles in profile*/
+
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .section__text__p2 span {
+    display: block; /* ensures long text breaks onto new lines */
+    width: 100%;
   }
 
   /* Buttons */
@@ -147,40 +174,9 @@
     height: auto;
     max-width: 300px;
   }
-}
-
-/*    hamburger Test    */
-
-.menu-links {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: 200px;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-  text-align: right;
-  border-radius: 0 0 8px 8px;
-}
-
-.menu-links.open {
-  display: flex;
-}
-
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
 
 /* LEADERSHIP PAGE*/
 
-@media (max-width: 768px) {
   .leadership-grid {
     grid-template-columns: 1fr; /* One card per row */
   }
@@ -188,32 +184,83 @@
   .leadership-card {
     flex: 0 1 100%;
   }
-}
 
 /*RESUME PAGE*/
 
-@media screen and (max-width: 768px) {
   .resume-info-container {
     grid-template-columns: 1fr;
     padding: 1.5rem;
   }
-}
 
 /*  PROJECT PAGE*/
 
-@media (max-width: 900px) {
   .projects-grid,
   .certifications-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2.5rem;
   }
-}
 
-/*  contact PAGE*/
+/*  CONTACT PAGE  */
 
-@media (max-width: 900px) {
   .contacts-card {
     flex: 0 1 100%;
   }
+
+}
+/*  FOOTER  */
+
+@media screen and (max-width: 600px) {
+  .footer-heading {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    line-height: 1.4;
+    max-width: 70%;
+  }
+
+  .footer-btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem; /* Reduced gap below button */
+  }
+
+  #footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0;            /* eliminate top & bottom margin */
+    padding: 0;           
+  }
+
+    .social-links i {
+    font-size: 1.2rem;
+  }
+
+  .copyright {
+    margin-top: 0.3rem;  /* Minimal space above */
+    margin-bottom: 0;    /* No space below */
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+.footer-container {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .site-footer {
+    padding-bottom: 10px; /* lower overall bottom padding */
+  }
+
+
 }
